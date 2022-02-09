@@ -1,0 +1,13 @@
+<a href="/new/">新規作成</a>
+
+<% users.forEach((user) => { %>
+        <div>
+        <span><%= user.firstName %></span>
+        <span><%= user.lastName %></span>
+        <span><%= user.email %></span>
+        <a href="/edit/<%= user.id %>">詳細</a>
+        <form action="/delete/<%= user.id %>" method="post">
+            <input type="submit" value="削除">
+        </form>
+        </div>
+<% }) %>

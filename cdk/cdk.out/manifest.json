@@ -1,0 +1,1383 @@
+{
+  "version": "16.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CdkStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/CdkStack/MyVpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcF9F0CA6F",
+            "trace": [
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:768:21)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1SubnetF6608456",
+            "trace": [
+              "new Subnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1071:20)",
+              "new PublicSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1227:5)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:956:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:927:28)",
+              "Vpc.createSubnets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:922:12)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:802:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1RouteTableC46AB2F4",
+            "trace": [
+              "new Subnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1089:19)",
+              "new PublicSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1227:5)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:956:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:927:28)",
+              "Vpc.createSubnets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:922:12)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:802:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1RouteTableAssociation2ECEE1CB",
+            "trace": [
+              "new Subnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1095:5)",
+              "new PublicSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1227:5)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:956:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:927:28)",
+              "Vpc.createSubnets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:922:12)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:802:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1DefaultRoute95FDF9EB",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1105:19)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:821:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:820:46)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1EIP096967CB",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1235:40)",
+              "NatGatewayProvider.configureNat (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:117:27)",
+              "Vpc.createNatGateways (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:897:14)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:827:14)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1NATGatewayAD3400C1",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1233:17)",
+              "NatGatewayProvider.configureNat (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:117:27)",
+              "Vpc.createNatGateways (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:897:14)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:827:14)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2Subnet492B6BFB",
+            "trace": [
+              "new Subnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1071:20)",
+              "new PublicSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1227:5)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:956:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:927:28)",
+              "Vpc.createSubnets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:922:12)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:802:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2RouteTable1DF17386",
+            "trace": [
+              "new Subnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1089:19)",
+              "new PublicSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1227:5)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:956:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:927:28)",
+              "Vpc.createSubnets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:922:12)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:802:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2RouteTableAssociation227DE78D",
+            "trace": [
+              "new Subnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1095:5)",
+              "new PublicSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1227:5)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:956:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:927:28)",
+              "Vpc.createSubnets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:922:12)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:802:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2DefaultRoute052936F6",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1105:19)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:821:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:820:46)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2EIP8CCBA239",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1235:40)",
+              "NatGatewayProvider.configureNat (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:117:27)",
+              "Vpc.createNatGateways (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:897:14)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:827:14)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2NATGateway91BFBEC9",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1233:17)",
+              "NatGatewayProvider.configureNat (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:117:27)",
+              "Vpc.createNatGateways (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:897:14)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:827:14)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1Subnet5057CF7E",
+            "trace": [
+              "new Subnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1071:20)",
+              "new PrivateSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1259:5)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:961:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:927:28)",
+              "Vpc.createSubnets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:922:12)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:802:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1RouteTable8819E6E2",
+            "trace": [
+              "new Subnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1089:19)",
+              "new PrivateSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1259:5)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:961:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:927:28)",
+              "Vpc.createSubnets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:922:12)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:802:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1RouteTableAssociation56D38C7E",
+            "trace": [
+              "new Subnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1095:5)",
+              "new PrivateSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1259:5)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:961:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:927:28)",
+              "Vpc.createSubnets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:922:12)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:802:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1DefaultRouteA8CDE2FA",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1137:19)",
+              "NatGatewayProvider.configureSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:131:12)",
+              "NatGatewayProvider.configureNat (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:124:12)",
+              "Vpc.createNatGateways (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:897:14)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:827:14)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2Subnet0040C983",
+            "trace": [
+              "new Subnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1071:20)",
+              "new PrivateSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1259:5)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:961:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:927:28)",
+              "Vpc.createSubnets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:922:12)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:802:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2RouteTableCEDCEECE",
+            "trace": [
+              "new Subnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1089:19)",
+              "new PrivateSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1259:5)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:961:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:927:28)",
+              "Vpc.createSubnets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:922:12)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:802:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2RouteTableAssociation86A610DA",
+            "trace": [
+              "new Subnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1095:5)",
+              "new PrivateSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1259:5)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:961:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:927:28)",
+              "Vpc.createSubnets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:922:12)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:802:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2DefaultRoute9CE96294",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1137:19)",
+              "NatGatewayProvider.configureSubnet (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:131:12)",
+              "NatGatewayProvider.configureNat (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:124:12)",
+              "Vpc.createNatGateways (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:897:14)",
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:827:14)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcIGW5C4A4F63",
+            "trace": [
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:809:19)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcVPCGW488ACE0D",
+            "trace": [
+              "new Vpc (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:815:19)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:20:17)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/MyCluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyCluster4C1BA579",
+            "trace": [
+              "new Cluster (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:159:21)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:24:21)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/securitygroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "securitygroupE9E43AD0",
+            "trace": [
+              "new SecurityGroup (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:272:26)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:30:27)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/db/SubnetGroup/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dbSubnetGroup9730EA00",
+            "trace": [
+              "new SubnetGroup (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-rds/lib/subnet-group.ts:48:25)",
+              "new DatabaseInstanceNew (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-rds/lib/instance.ts:357:46)",
+              "new DatabaseInstanceSource (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-rds/lib/instance.ts:507:5)",
+              "new DatabaseInstance (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-rds/lib/instance.ts:621:5)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:36:18)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/db/Secret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dbSecret8003E3A7",
+            "trace": [
+              "new Secret (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:366:22)",
+              "new DatabaseSecret (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-rds/lib/database-secret.ts:37:5)",
+              "Object.renderCredentials (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-rds/lib/private/util.ts:95:7)",
+              "new DatabaseInstance (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-rds/lib/instance.ts:623:25)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:36:18)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/db/Secret/Attachment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dbSecretAttachment5D338442",
+            "trace": [
+              "new SecretTargetAttachment (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:515:24)",
+              "DatabaseSecret.attach (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:245:12)",
+              "new DatabaseInstance (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-rds/lib/instance.ts:646:28)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:36:18)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/db/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dbECC37780",
+            "trace": [
+              "new DatabaseInstance (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-rds/lib/instance.ts:626:22)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:36:18)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceLBE9A1ADBC",
+            "trace": [
+              "new BaseLoadBalancer (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.ts:140:22)",
+              "new ApplicationLoadBalancer (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:56:5)",
+              "new ApplicationLoadBalancedServiceBase (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:208:48)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:44:5)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceLBSecurityGroupF7435A5C",
+            "trace": [
+              "new SecurityGroup (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:272:26)",
+              "new ApplicationLoadBalancer (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:63:52)",
+              "new ApplicationLoadBalancedServiceBase (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:208:48)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:44:5)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/LB/SecurityGroup/to CdkStackServiceSecurityGroupB4A74E9C:3000": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceLBSecurityGrouptoCdkStackServiceSecurityGroupB4A74E9C3000F03F82BF",
+            "trace": [
+              "SecurityGroup.addEgressRule (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:85:7)",
+              "SecurityGroup.addEgressRule (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:321:13)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:86:23",
+              "ReactiveList.forEachAndForever (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:85:45",
+              "ReactiveList.forEachAndForever (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "Connections.allowTo (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:84:26)",
+              "Connections.allowFrom (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:114:25)",
+              "ApplicationListener.registerConnectable (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:302:29)",
+              "ApplicationTargetGroup.registerConnectable (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:144:16)",
+              "Object.attachToApplicationTargetGroup (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:437:21)",
+              "FargateService.attachToApplicationTargetGroup (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:422:43)",
+              "ApplicationTargetGroup.addTarget (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:103:29)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:310:22)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:103:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/LB/PublicListener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceLBPublicListener46709EAA",
+            "trace": [
+              "new BaseListener (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.ts:94:22)",
+              "new ApplicationListener (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:111:5)",
+              "ApplicationLoadBalancer.addListener (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:77:22)",
+              "new ApplicationLoadBalancedServiceBase (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:224:34)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:44:5)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/LB/PublicListener/ECSGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceLBPublicListenerECSGroup0CC8688C",
+            "trace": [
+              "new TargetGroupBase (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.ts:129:21)",
+              "new ApplicationTargetGroup (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:67:5)",
+              "ApplicationListener.addTargets (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:227:19)",
+              "new ApplicationLoadBalancedServiceBase (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:230:38)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:44:5)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/LoadBalancerDNS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceLoadBalancerDNSEC5B149E",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:296:5)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:44:5)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/ServiceURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceServiceURL250C0FB6",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:297:5)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:44:5)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/TaskDef/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefTaskRole0CFE2F57",
+            "trace": [
+              "new Role (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:201:18)",
+              "new TaskDefinition (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:238:39)",
+              "new FargateTaskDefinition (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.ts:72:5)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:54:29)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/TaskDef/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDef1922A00F",
+            "trace": [
+              "new TaskDefinition (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:257:21)",
+              "new FargateTaskDefinition (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.ts:72:5)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:54:29)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/TaskDef/web/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefwebLogGroup2A898F61",
+            "trace": [
+              "new LogGroup (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-logs/lib/log-group.ts:252:22)",
+              "AwsLogDriver.bind (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/log-drivers/aws-log-driver.ts:57:44)",
+              "new ContainerDefinition (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/container-definition.ts:226:44)",
+              "FargateTaskDefinition.addContainer (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:394:12)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:69:45)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/TaskDef/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefExecutionRole919F7BE3",
+            "trace": [
+              "new Role (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:201:18)",
+              "FargateTaskDefinition.obtainExecutionRole (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:450:29)",
+              "EcrImage.bind (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/images/ecr.ts:26:66)",
+              "new ContainerDefinition (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/container-definition.ts:222:36)",
+              "FargateTaskDefinition.addContainer (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:394:12)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:69:45)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/TaskDef/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefExecutionRoleDefaultPolicy3073559D",
+            "trace": [
+              "new Policy (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:238:28)",
+              "Function.addToPrincipal (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Function.addToPrincipalOrResource (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-iam/lib/grant.ts:48:26)",
+              "Import.grant (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecr/lib/repository.ts:147:22)",
+              "Import.grantPull (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecr/lib/repository.ts:158:22)",
+              "EcrImage.bind (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/images/ecr.ts:26:21)",
+              "new ContainerDefinition (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/container-definition.ts:222:36)",
+              "FargateTaskDefinition.addContainer (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:394:12)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:69:45)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/Service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Service9571FDD8",
+            "trace": [
+              "new BaseService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:278:21)",
+              "new FargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.ts:80:5)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:85:20)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/Service/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceSecurityGroupEEA09B68",
+            "trace": [
+              "new SecurityGroup (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:272:26)",
+              "FargateService.configureAwsVpcNetworkingWithSecurityGroups (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:608:25)",
+              "new FargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.ts:99:10)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:85:20)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Service/Service/SecurityGroup/from CdkStackServiceLBSecurityGroupC824F010:3000": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceSecurityGroupfromCdkStackServiceLBSecurityGroupC824F01030004EC4637F",
+            "trace": [
+              "SecurityGroup.addIngressRule (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:67:7)",
+              "SecurityGroup.addIngressRule (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:289:13)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:107:23",
+              "ReactiveList.forEachAndForever (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:106:45",
+              "ReactiveList.forEachAndForever (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "Connections.allowFrom (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:105:26)",
+              "ApplicationListener.registerConnectable (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:302:29)",
+              "ApplicationTargetGroup.registerConnectable (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:144:16)",
+              "Object.attachToApplicationTargetGroup (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:437:21)",
+              "FargateService.attachToApplicationTargetGroup (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:422:43)",
+              "ApplicationTargetGroup.addTarget (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:103:29)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.ts:310:22)",
+              "new ApplicationLoadBalancedFargateService (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.ts:103:10)",
+              "new CdkStack (/Users/user/express-fargate/cdk/lib/cdk-stack.ts:54:40)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/bin/cdk.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/user/express-fargate/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/user/express-fargate/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (/Users/user/express-fargate/cdk/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/CdkStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/user/express-fargate/cdk/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (/Users/user/express-fargate/cdk/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "CdkStack"
+    }
+  }
+}
