@@ -58,13 +58,6 @@ export class CdkStack extends cdk.Stack {
       taskImageOptions: {
         image: ecs.ContainerImage.fromEcrRepository(repository, tag),
         containerPort: 3000,
-        // environment: { //コンテナの中の環境変数を設定
-        //   "DB_USER": "postgres",
-        //   "DB_PASSWORD": "joruju2248",
-        //   "DB_NAME": "expresspostgrerds3",
-        //   "DB_PORT": "5432",
-        //   "DB_HOST": "cd47ql6ch94dfv.c9vghpd7vi9i.us-east-1.rds.amazonaws.com",
-        // },
       },
     });
   }
