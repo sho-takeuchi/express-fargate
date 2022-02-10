@@ -18,10 +18,10 @@ VPC、セキュリティグループ、RDS、ECS(fargate)などのAWSリソー�
     - ECR
     - ECS(fargate)
     
-### Node.js、Express、Sequelize、PostgreSQLを使う理由
+## Node.js、Express、Sequelize、PostgreSQLを使う理由
 単純に以前の職場で使用していた技術だったため。
 
-### Docker(コンテナ技術)を使う理由
+## Docker(コンテナ技術)を使う理由
 
 
 ### CD(継続的デリバリー)
