@@ -37,4 +37,5 @@ VPC、セキュリティグループ、RDS、ECS(fargate)などのAWSリソー�
 - レビューが容易
 
 # AWS(インフラ)構成図
-![名称未設定 drawio (1)](https://user-images.githubusercontent.com/58723017/132848710-460f3020-e3a4-4d4d-b150-b9edf919aaf3.png)
+![template1-designer](https://user-images.githubusercontent.com/58723017/153323823-de803e7f-7b88-4fd6-99f5-7b95493e666a.png)
+
