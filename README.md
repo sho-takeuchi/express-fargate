@@ -1,6 +1,6 @@
 # Express-fargate-CDK CRUDアプリ
 
-ここにhttps化した後にリンクを貼る。
+https://express-fargate-cdk1988.link
 
 Expressで作成したシンプルなCRUDアプリです。
 インフラはAWSを使用しています。
