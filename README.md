@@ -37,7 +37,7 @@ VPC、セキュリティグループ、RDS、ECS(fargate)などのAWSリソー�
 - インフラ構成をコード化しているため、使用しているリソースが一目でわかる
 - レビューが容易
 
-## Github Actionsを使う理由(実装中)
+## Github Actionsを使う理由(実装予定)
 
 # AWS(インフラ)構成図
 ![template1-designer](https://user-images.githubusercontent.com/58723017/153323823-de803e7f-7b88-4fd6-99f5-7b95493e666a.png)
