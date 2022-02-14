@@ -19,8 +19,8 @@ VPC、セキュリティグループ、RDS、ECS(fargate)などのAWSリソー�
     - ECS(fargate)
     
 ## Node.js、Express、Sequelize、PostgreSQLを使う理由
-以前の職場で使用していた技術だったため使用する。
-AWS Amplify×REST APIを使用するときに、Lambda関数の実行環境を個人的にNode.js→テンプレートをServerless ExpressJS function (Integration with API Gateway)を選択しているため互換性がある。
+将来的にこちらのアプリを何らかのデータ保存場所(画像など)に使用することを想定している。
+別のアプリで、AWS Amplify×REST APIを使用するときに、Lambda関数の実行環境を個人的にNode.js→テンプレートをServerless ExpressJS function (Integration with API Gateway)を選択しているため、Node.js(Express)を使用している。
 
 ## Docker(代表的なコンテナ技術)を使う理由
 仮想マシン(単一のサーバー上で複数のOSを稼働させる技術)とは違い、コンテナは、サーバーのリソース(CPU、メモリ、ファイルシステム、プロセス空間など)を効率的に使用でき、起動や停止が高速で行えます。そして、1個のコンテナイメージから複数のコンテナを起動できるため、必要な数だけ起動や停止が可能という「スケーラビリティ」にも優れています。また、Docker(同じイメージ)を使えば開発チームの環境を全く同じにできるのもメリットです。
