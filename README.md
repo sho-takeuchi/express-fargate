@@ -1,6 +1,6 @@
 # Express-fargate-CDK CRUDアプリ
 
-~~https://express-fargate-cdk1988.link~~ 閉鎖中
+https://express-fargate-cdk1988.link
 
 Expressで作成したシンプルなCRUDアプリです。
 インフラはAWSを使用しています。
